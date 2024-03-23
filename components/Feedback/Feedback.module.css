@@ -1,0 +1,25 @@
+.feedbackSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly   ;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    height: auto;
+}
+.feedbackSection>*{
+    margin-top: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.textArea{
+    width: 50%;
+}
+
+@media screen and (max-width: 768px){
+    
+    .textArea{
+        width: 100%;
+    }
+}

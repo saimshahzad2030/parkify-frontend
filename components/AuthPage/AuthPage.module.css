@@ -1,0 +1,39 @@
+.authenticationSection{
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    align-items: center;
+    background-color: rgb(41, 41, 41);
+   height: 100vh
+}
+.authenticationSection >h1{
+    color: white;
+}
+.authenticationSection > p{
+color: rgb(197, 197, 197);
+width: 100%;
+text-align: center;
+padding: 0px 10px 0px 10px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    padding: 10px 30px 60px 30px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+}
+.authenticationSection > .initialText{
+    color: white;
+}
+.my-custom-tabs .ant-tabs-tab+.ant-tabs-tab {
+    margin: 0 0 0 16px; /* Adjust the margin values as per your requirement */
+}
+
+@media screen and (max-width:400px){
+    .authenticationSection{
+        
+       height: auto;
+       padding-bottom: 100px;
+    }
+}

@@ -1,0 +1,219 @@
+.BookParking{
+    height: auto;
+    width: 100%;
+   
+    background-color: rgb(255, 255, 255);
+}
+
+.mainDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 100%;
+}
+.mainDiv > *{
+    margin-top: 100px;
+}
+
+.mainDivImageDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+   background-color: rgb(0, 0, 0);
+    width: 80%;
+    position: relative;
+}
+.mainDivImageDiv >img{
+    cursor: pointer;
+    box-shadow: 0 0 20px 5px rgba(115, 115, 115, 0.5);
+    width:100%;
+    opacity: 0;
+    background-color: aliceblue;
+    transition: transform 0.3s ease-in-out,opacity 0.3s ease-in-out;
+   
+}
+.mainDivImageDiv>h1{
+   color: white;
+}
+.mainDivImageDiv >img:hover{
+    opacity: 1; /* Show image on hover */
+    transform: scale(0.9);
+    
+}   
+
+@media screen and (max-width:1024px) {
+    .mainDivImageDiv > img{
+        opacity: 1;
+    }    
+    .mainDivImageDiv > h1{
+        opacity: 0;
+      
+    }    
+    .mainDiv > h1{
+        padding: 0px 30px 0px 30px;
+    }
+}
+/* form Section */
+.backButtonDiv{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+
+}
+.backbutton{
+     font-size: 50px;
+     border-radius: 50%;
+     color: white;
+    background-color: rgb(68, 68, 68);
+    cursor: pointer;
+    margin-left: 30px;
+}
+.backbutton:hover{
+    font-size: 50px;
+    border-radius: 50%;
+    color: rgb(0, 0, 0);
+   background-color: rgb(144, 144, 144);
+}
+.formBookParking{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.formBookParking >p{
+    width: 50%;
+}
+@media screen and (max-width:1000px) and (min-width:500px) {
+    .formBookParking >p{
+        width: 80%;
+    }
+}
+@media screen and (max-width:500px)  {
+    .formBookParking >p{
+        width: 100%;
+    }
+    .formBookParking > h1{
+        font-size: 20px;
+    }
+}
+.buttonDiv{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.parkingAreaDiv{
+    display: flex;
+    margin-top: 50px;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    background-color: aliceblue;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    justify-content: space-evenly;
+}
+.parkingAreaDiv > *{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    padding: 0px 20px 0px 20px;
+    text-align: center;
+}
+.smallPreviewRow{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    height: auto;
+    width: 50%;
+    padding: 20px;
+    background-color: black;
+}   
+.smallPreviewColumn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 40px;
+    width: 20%;
+    padding: 20px;
+    cursor: pointer;
+
+}
+.selectedSlotBooked{
+    width: 60%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.selectedSlotBooked > h2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold  ;
+}
+.selectedSlot{
+    width: 30%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid black;
+    margin-top: 30px;
+}
+.selectedSlot>h4,.selectedSlot>h1{
+    padding: 10px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.congratulatingDiv{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.congratulatingDiv > *{
+    text-align: center;
+    margin-top: 20px;
+}
+.congratulatingDiv >h1{
+    padding: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+@media screen and (max-width:650px) and (min-width:400px) {
+    .smallPreviewRow{
+       
+        width: 80%;
+        
+    }   
+    .smallPreviewColumn{
+        height: 20px;
+    }
+}
+
+@media screen and (max-width:400px)  {
+    .smallPreviewRow{
+       
+        width: 100%;
+        
+    }   
+    .smallPreviewColumn{
+        height: 20px;
+    }
+}

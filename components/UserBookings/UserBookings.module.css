@@ -1,0 +1,50 @@
+.tableSection{
+    position: relative;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 40px;
+}
+.tableSection >h1{
+        text-align: center;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.cancelButtonDiv{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    margin-top: 20px;
+
+}
+.cancelButtonDiv > Button{
+    width: 200px;
+    height: 50px;
+}
+.tableSection>*{
+    margin-top: 20px;
+}
+
+
+
+
+
+.tableWrapper {
+    margin-top: 40px;
+  }
+  
+  .heading {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-family: calibri;
+  }
+  
+  .scrollableTable {
+    overflow-x: auto;
+  }
+  

@@ -1,0 +1,18 @@
+
+
+.tableWrapper {
+    margin-top: 40px;
+  }
+  
+  .heading {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-family: calibri;
+  }
+  
+  .scrollableTable {
+    overflow-x: auto;
+  }
+  
