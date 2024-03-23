@@ -38,7 +38,7 @@ const UserBookings = () => {
   const router = useRouter();
   const [data, setData] = useState([]);
   const [messageApi, contextHolder] = message.useMessage();
-
+  const [apiReceived,setApiRecieved]=useState(false)
   const deleteParking = async (parkingId) => {
     try {
       await axios
@@ -96,8 +96,12 @@ const UserBookings = () => {
           ),
         }));
         setData(newData);
+        setApiRecieved(true)
+
       } catch (error) {
         console.error('Error fetching data:', error);
+        setApiRecieved(true)
+
       }
     };
 
@@ -107,14 +111,20 @@ const UserBookings = () => {
   return (
     <div className={style.tableWrapper}>
       {contextHolder}
-      {data.length > 0 && (
-        <>
+      {apiReceived && (
+        data.length === 0?
+        
+        <h1 className={style.heading}>No Bookings to show.</h1>
+      :
+      <>
           <h1 className={style.heading}>Your Bookings.</h1>
           <div className={style.scrollableTable}>
             <Table columns={columns} dataSource={data} />
           </div>
         </>
-      )}
+      )
+      }
+      
     </div>
   );
 };
