@@ -188,7 +188,7 @@ const BookParking = () => {
                     />
                 </div>
                 <h1 style={{ textAlign: 'center', fontWeight: 'bold', marginTop: '40px',padding:'0px 20px 0px 20px', display: formSubmitted || parkingBooked ? 'none' : '' }}>You have selected area {selectedArea} for parking</h1>
-                <p style={{ textAlign: 'center', marginTop: '10px', padding: ' 5px 20px 5px 20px', display: formSubmitted || parkingBooked ? 'none' : '' }}>You can reserve parking for only one day not more than that and you have to leave selected slot the same day you park it u can re-reserve the slot on next day. </p>
+                <p style={{ textAlign: 'center', marginTop: '10px', padding: ' 5px 20px 5px 20px', display: formSubmitted || parkingBooked ? 'none' : '' }}>Select Starting and ending date from below to check whether a slot is available or not.. </p>
 
                 <Form
                     ref={formRef}
