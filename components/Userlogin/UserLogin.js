@@ -233,7 +233,7 @@ const UserLogin = () => {
 setSpinVisible(true)
 
                     try {
-                      const response = await axios.post('https://parkify-backend-plum.vercel.app/api/user/sendVerificationEmail', {
+                      const response = await axios.post('https://parkify-backend-plum.vercel.app/api/user/verificationemail', {
                         email: values.email,
                       });
                 
@@ -270,7 +270,7 @@ messageApi.info(error.response.data.message)
 setSpinVisible(true)
 
                     try {
-                      const response = await axios.post('https://parkify-backend-plum.vercel.app/api/user/matchToken', {
+                      const response = await axios.post('https://parkify-backend-plum.vercel.app/api/user/match-token', {
                         email: values.email,
                         token:values.token
                       });
